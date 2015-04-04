@@ -1,0 +1,31 @@
+{
+  "name": "Zebis-Angularjs-App",
+  "version": "0.0.1",
+  "description": "This angularjs app is about a phone directory search with proper searching, edit, insert, update and delete.",
+  "main": "index.html",
+  "scripts": {
+    "test": "console.log('yup angular is up and runing and i am test script of it')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zohaibtariq/angularjs-"
+  },
+  "keywords": [
+    "angularjs",
+    "phone",
+    "directory",
+    "search",
+    "phone",
+    "directory",
+    "search",
+    "phone",
+    "directory",
+    "in",
+    "angularjs"
+  ],
+  "author": "zohaib tariq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zohaibtariq/angularjs-/issues"
+  }
+}

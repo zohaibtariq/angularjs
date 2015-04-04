@@ -1,0 +1,20 @@
+{
+  "name": "Zebis-Angularjs-App",
+  "version": "0.0.1",
+  "authors": [
+    "\"phone\""
+  ],
+  "description": "This angularjs app is about a phone directory search with proper searching, edit, insert, update and delete.",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "\"angularjs\""
+  ],
+  "license": "\"directory\",",
+  "homepage": "\"search\",",
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}
