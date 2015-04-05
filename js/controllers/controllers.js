@@ -1,5 +1,5 @@
-var app = angular.module("myModule", []);
+var app = angular.module("phoneDirectory", []);
 
-app.controller("myCtrl1", function($scope){
+app.controller("userName", function($scope){
     $scope.name = "Zohaib Tariq";
 });
