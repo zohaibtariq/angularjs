@@ -13,12 +13,75 @@
 	    <ol>
 	    	<li ng-repeat="countryName in  countries">The name of country is {{countryName}}</li>
 	    </ol>
-	    <h2>Child controller</h2>
+	    <!-- <h2>Child controller</h2> -->
 	   	<div ng-controller="countriesList">
 		    <p>Following countries are from another second controller</p>
 		    <ol>
 		    	<li ng-repeat="countryName in  countries">The population of  {{countryName.name}} is {{countryName.population}} Million and percentage of its population is {{populationPercentage(countryName.population)}}% of total </li>
 		    </ol>
+		</div>
+		<!-- inheritance -->
+		<div class="inheritance">
+			<h1>Inheritance in angularjs</h1>
+			<div ng-controller="parentController">
+				<h2>In parent controller</h2>
+				{{userName}}
+				{{gender}}
+				<div ng-controller="childController">
+					<h2>In child controller</h2>
+					<p>My name is : {{userName}}</p>
+					<p>I am : {{gender}}</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<!-- this as controller -->
+			<div ng-controller="thisAsController as thisAs">
+				<h1>This as controller</h1>
+				{{thisAs.name}}			
+			</div>
+
+			<!-- controllers scopes -->
+			<div ng-controller="scopeController">
+				<h1>Scope Controllers root and local (scope)</h1>
+				{{scopeName}}
+			</div>
+			<!-- outside any controller -->
+			<div>
+				<h2>Not in any controller</h2>
+				{{scopeName}}
+			</div>
+		</div>
+
+		<!-- angular events bubbling -->
+		<div>
+			<h1>Angular events bubbling</h1>
+			<div ng-controller="eventBubbling">
+				<ul>
+					<li>
+						<h3>List of added User name is</h3>
+					</li>
+					<li ng-repeat="UserName in userInputNames">{{UserName}}</li>			
+				</ul>
+				<h2>Event Handling is done here</h2>
+				<p><input type="text" ng-model="userInputName"></p>
+				<p><button ng-click="add()">Add Users</button></p>				
+			</div>	
+		</div>
+
+		<!-- angular events bubbling -->
+		<div>
+			<h1>Angular events handeler</h1>
+			<div ng-controller="eventHandelerFirstController">
+				<h2>Event Raising Parent Controller First</h2>
+				<p><input type="text" ng-model="userInputName"></p>
+				<p><button ng-click="raiseEvent()">Raise My Custom Event</button></p>
+				<div ng-controller="eventHandelerSecondController">
+					<h2>Event Raising Child Controller Second</h2>
+					<!-- <p><button ng-click="raiseEvent()">Raise My Custom Event</button></p> -->
+					<p>Last entered name is : {{usersName}}</p>
+				</div>	
+			</div>	
 		</div>
 	</div>
 </body>
