@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angularjs App | Services And Factories</title>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/angular-aria/angular-aria.js"></script>
+	<script src="./bower_components/angular-animate/angular-animate.js"></script>
+	<script src="./bower_components/angular-material/angular-material.js"></script>
+	<script type="text/javascript" src="js/controllers/controllers_basics.js"></script>
+</head>
+<!-- Services And Factories -->
+<body ng-app = "servicesAndFactories">
+	<div ng-controller="controllerFirst">
+		<p><label>Name : <input ng-model="student_name"/></label></p>
+		<p><label>Age : <input ng-model="student_age"/></label></p>
+		<p><button ng-click="savedStudent()">Save Student</button></p>
+	</div>
+	<div ng-controller="controllerSecond">
+		<ul>
+			<li ng-repeat="std in allStudents">Student's name is : {{std.name}} and students age is : {{std.age}}</li>
+		</ul>
+		<div layout = "row">
+	        <div flex = '50' style="color: blue">
+	            Hello I am first
+	        </div>
+	        <div flex>
+	            Hello I am Second
+	        </div>
+	        <div flex>
+	            Hello I am third
+	        </div>
+	        <div flex>
+	            Hello I am Fourth
+	        </div>
+    	</div>
+	</div>	
+</body>
+</html>

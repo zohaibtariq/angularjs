@@ -101,3 +101,7 @@ app.controller("eventHandelerSecondController",function($scope){
         $scope.usersName = data;
     });
 });
+
+//if you have only one controller means there is no parent child relationship so u must have to do
+// first register your event $scope.$on
+// then you can both emit and broadcast your event
